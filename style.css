@@ -19,6 +19,16 @@ body {
     padding: 20px;
 }
 
+
+.imagem-cabecalho img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center top; 
+    display: block;
+    border-bottom: 4px solid var(--verde-musgo);
+}
+
 header {
     text-align: center;
     margin-bottom: 40px;
@@ -37,7 +47,7 @@ header p {
 
 .cursos-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
@@ -48,6 +58,12 @@ header p {
     background-color: #1a1a1a;
     transition: transform 0.3s, border-color 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    
+
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .curso:hover {
